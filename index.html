@@ -7,10 +7,14 @@
         <div class="wrapper">
         <nav class="main-nav">
             <ul>
-                <li class="linkItem" id="about"><a href="#">About</a></li>
-                <li class="linkItem" id="store"><a href="#">Store</a></li>
-                <li class="push linkItem" id="gmail"><a href="#">Gmail</a></li>
-                <li class="linkItem" id="images"><a href="#">Images</a></li>
+                <div><img id="logo-image" src="images/googlelogo_color_272x92dp.png"></div>
+                <section class="search-bar">
+                    <div id="search-box">
+                        <img src="images/magnifying-glass.png">
+                        <input type="text" placeholder="Search Google or type a URL">
+                        <img id="mic" src="images/microphone.png">
+                    </div> <!--search-box-->
+                </section>            
                 <li class="circle-grid linkItem">
                     <a href="#">
                         <div class="circle"></div>
@@ -26,24 +30,37 @@
                 </li>
                 <li class="linkItem" id="signin"><a href="#">Sign in</a></li>
             </ul>
+            <ul>
+                <div id="buttons">
+                    <button><img id="mic" src="images/microphone.png">All</button>
+                    <button>Maps</button>
+                    <button>Shopping</button>
+                    <button>News</button>
+                    <button>Images</button>
+                    <button>More</button>
+                    <button>Settings</button>
+                    <button>Tools</button>
+                </div>
+            </ul>
         </nav>
-        <section class="logo">
-            <img id="logo-image" src="images/googlelogo_color_272x92dp.png">
-        </section>
-        <section class="search-bar">
-            <div id="search-box">
-                <img src="images/magnifying-glass.png">
-                <input type="text" placeholder="Search Google or type a URL">
-                <img id="mic" src="images/microphone.png">
-            </div> <!--search-box-->
-            <div id="buttons">
-                <button>Google Search</button>
-                <button>I'm feeling lucky!</button>
-            </div>
-        </section>
+        <h2>About #of results returned (#of seconds)</h2>
+        <div class="Ad_Results_Box">
+            <h1>Search Result One -- Advertisement</h1>
+            <h3>Ad website name</h3>
+            <h3>Ratings ***</h3>
+            <p>Description box of search results. </p>
+            <h3>Map Address</h3>
+        </div>
+
+       
         
         <footer class="footer">
-            <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <h1>Searches related to search term</h1>
+            <ul>
+                <li>alternate search term one</li>
+                <li>alternate search term two</li>
+                <li>alternate search term three</li>
+            </ul>
         </footer>
     </div> <!--wrapper div-->
     </body>

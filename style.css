@@ -1,0 +1,170 @@
+.main-nav {
+    grid-area: nav;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.search-bar {
+    grid-area: searchbar;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.wrapper {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "nav"
+        "logo"
+        "searchbar"
+        "footer";
+}
+
+.main-nav {
+    display: flex;
+    align-items: flex-start;
+    margin-top: .5rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    width: 100%;
+    align-items: center;
+}
+
+.linkItem a {
+    padding: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.linkItem a:hover {
+    text-decoration: underline;
+}
+
+#signin a {
+    background-color: royalblue;
+    color: white;
+    border-radius: 3px;
+    padding: .5rem;
+}
+
+#signin a:hover {
+    text-decoration: none;
+}
+
+.push {
+    margin-left: auto;
+}
+
+.circle-grid a {
+    display: flex;
+    width: 22px;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.circle {
+    width: 4px;
+    height: 4px;
+    background: grey;
+    border-radius: 50%;
+    margin: 1px;
+}
+
+.logo, .search-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo-image {
+    margin-top: 5rem;
+    max-width: 250px;
+}
+
+.search-bar {
+    margin-top: 1rem;
+    flex-grow: 1;
+}
+
+#search-box {
+    max-width: 500px;
+    border: solid grey .5px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#buttons {
+    margin-top: 1rem;
+}
+
+button {
+    background-color: #f8f8f8;
+    border: none;
+    padding: .5rem;
+    margin: .3rem;
+    color: gray;
+}
+
+input {
+    width: 300px;
+    border: 0px solid;
+    margin-left: 10px;
+}
+
+.footer {
+    display: flex;
+    align-items: flex-end;
+}
+
+.footer div {
+    font-size: smaller;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+@media only screen and (max-width: 500px) {
+    /* For mobile phones */
+    #about, #store, #gmail, #images, .circle-grid {
+        display: none;
+    }
+
+    .wrapper {
+        width: 100vw;
+    }
+
+    #signin {
+        margin: 1rem 1.5rem 0 auto;
+    }
+
+    #logo-image {
+        width: 200px;
+    }
+
+    #search-box {
+        width: 250px;
+    }
+
+    input {
+        width: 190px;
+    }
+
+    #mic {
+        display: none;
+    }
+
+    .footer div {
+        font-size: x-small;
+    }
+}
